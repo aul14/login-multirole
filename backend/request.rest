@@ -1,0 +1,46 @@
+// Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "password": "john",
+    "confPassword": "john",
+    "role": "user"
+}
+###
+// get All Users
+GET http://localhost:5000/users
+###
+// get single user
+GET http://localhost:5000/users/9eeb726e-eae7-47ce-9a25-cf6e308032a4
+###
+// Update a user
+PUT http://localhost:5000/users/513a25ac-cf91-4210-8fcb-26e0415adf56
+Content-Type: application/json
+
+{
+    "name": "John Doe di update",
+    "email": "john@gmail.com",
+    "role": "user"
+}
+###
+// Delete a user
+DELETE  http://localhost:5000/users/513a25ac-cf91-4210-8fcb-26e0415adf56
+###
+// Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+// ME
+GET http://localhost:5000/me
+###
+// Logout
+POST http://localhost:5000/logout
