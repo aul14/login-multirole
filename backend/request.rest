@@ -34,8 +34,8 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "admin@gmail.com",
-    "password": "admin"
+    "email": "john@gmail.com",
+    "password": "john"
 }
 
 ###
@@ -44,3 +44,30 @@ GET http://localhost:5000/me
 ###
 // Logout
 POST http://localhost:5000/logout
+###
+// Get all product
+GET http://localhost:5000/products
+###
+// Add product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": 8534
+}
+###
+// Get product by id
+GET http://localhost:5000/products/193bea81-1ca5-4fbb-96bf-af5e827f3019
+###
+// Add product
+PUT http://localhost:5000/products/e4d96444-37fb-4eb5-b04e-5cb348fa1d8e
+Content-Type: application/json
+
+{
+    "name": "Product 1 Update",
+    "price": 8534
+}
+###
+// delete product by id
+DELETE http://localhost:5000/products/193bea81-1ca5-4fbb-96bf-af5e827f3019
