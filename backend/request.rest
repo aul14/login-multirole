@@ -39,7 +39,7 @@ Content-Type: application/json
 }
 
 ###
-// ME
+// ME / Get user login
 GET http://localhost:5000/me
 ###
 // Logout
