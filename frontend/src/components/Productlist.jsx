@@ -27,6 +27,7 @@ const Productlist = () => {
                 <thead>
                     <tr>
                         <th>No</th>
+                        <th>Image Product</th>
                         <th>Product Name</th>
                         <th>Price</th>
                         <th>Created By</th>
@@ -37,6 +38,7 @@ const Productlist = () => {
                     {products.map((product, index) => (
                         <tr key={product.uuid}>
                             <td>{index + 1}</td>
+                            <td><img src={product.url} className='image is-96x96' alt={product.name} /></td>
                             <td>{product.name}</td>
                             <td>{product.price}</td>
                             <td>{product.user.name}</td>
