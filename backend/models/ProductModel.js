@@ -13,6 +13,20 @@ const Products = db.define('product', {
             notEmpty: true
         }
     },
+    image: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
+    url: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        }
+    },
     name: {
         type: DataTypes.STRING,
         allowNull: false,

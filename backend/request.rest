@@ -3,11 +3,11 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "email": "john@gmail.com",
-    "password": "john",
-    "confPassword": "john",
-    "role": "user"
+    "name": "Aul Rahman",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
 }
 ###
 // get All Users
@@ -34,8 +34,8 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "john@gmail.com",
-    "password": "john"
+    "email": "admin@gmail.com",
+    "password": "123456"
 }
 
 ###
@@ -70,4 +70,4 @@ Content-Type: application/json
 }
 ###
 // delete product by id
-DELETE http://localhost:5000/products/193bea81-1ca5-4fbb-96bf-af5e827f3019
+DELETE http://localhost:5000/products/0b4f7455-a773-4ffd-b95c-a6163f3409d7

@@ -1,4 +1,5 @@
 import express from 'express';
+import FileUpload from 'express-fileupload'
 import cors from 'cors';
 import session from 'express-session';
 import SequelzeStore from 'connect-session-sequelize';
@@ -30,9 +31,11 @@ app.use(session({
 app.use(cors({
     credentials: true,
     origin: ['http://localhost:3000']
-}))
+}));
 
-app.use(express.json())
+app.use(express.json());
+app.use(FileUpload());
+app.use(express.static("public"));
 
 app.use(UserRoute);
 app.use(ProductRoute);
